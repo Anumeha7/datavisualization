@@ -1,26 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Reuters-style article">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center; /* This will center-align all text */
+}
 
-    <main>
-        <article>
-            <h2>Main Headline Here</h2>
-            <img src="image_url" alt="Main Image" class="main-image">
-            <p>This is where you will put the main content of your page. Write the text as if it's an article, similar to how Reuters presents news.</p>
-            <p>Add more paragraphs and break the content down into sections.</p>
-        </article>
-    </main>
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center; /* Center the content inside the main area */
+}
 
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center; /* Center the heading */
+}
 
-</body>
-</html>
+article .main-image {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center; /* Center the paragraphs */
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
