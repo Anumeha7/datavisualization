@@ -3,38 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your Reuters-style article">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="CO₂ Emissions Visualization">
+    <title>CO₂ Emissions Visualization</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS for Alignment and Fonts -->
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h2, h3 {
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .flourish-embed {
+            margin: 30px auto;
+        }
+    </style>
 </head>
 <body>
 
     <main>
-        <article>
-            <h2>Main Headline Here</h2>
-            <p>This is where you will put the main content of your page. Write the text as if it's an article, similar to how Reuters presents news.</p>
+        <!-- Main Heading -->
+        <h2>Who is the Biggest Polluter? It Depends on How You Ask</h2>
 
-            <!-- Flourish Embed Code for Graph 1 -->
-            <div class="flourish-embed flourish-hierarchy" data-src="visualisation/19504168">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/19504168/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
-            </div>
-            <!-- End Flourish Embed Code for Graph 1 -->
+        <!-- Introduction -->
+        <h3>Introduction</h3>
+        <p>Who is to blame for the dangerously high levels of carbon dioxide (CO₂) in our atmosphere? The answer depends on which perspective you take. If you look at total emissions, you’ll see the same big players: the United States and China. But switch to per capita emissions, and the story changes—Qatar takes the lead, while China and India fall far behind.</p>
+        <p>And it’s not just about the numbers. There’s money involved, too. Developing nations argue that wealthier countries, which have been burning fossil fuels for centuries to build their economies, should bear the financial burden of transitioning the world to greener energy. Yet, rich countries have fallen short of their promises to deliver on this "climate finance" and help mitigate climate change’s growing damage.</p>
+        <p>As negotiations at COP26 have shown, this debate—who should pay, and who is to blame—is far from settled. So, let’s explore how the title of "biggest polluter" shifts depending on which question you ask.</p>
 
-            <p>Add more paragraphs and break the content down into sections.</p>
+        <!-- Graph 1: Historical Emissions -->
+        <h3>1. Who Has Polluted the Most Over Time?</h3>
+        <p>When we examine historical emissions, going back to the Industrial Revolution, it becomes clear that the United States is responsible for the largest share of CO₂ released into the atmosphere.</p>
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/19504168">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19504168/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
+        </div>
 
-            <!-- Flourish Embed Code for Graph 2 -->
-            <div class="flourish-embed flourish-chart" data-src="visualisation/19504587">
-                <script src="https://public.flourish.studio/resources/embed.js"></script>
-                <noscript><img src="https://public.flourish.studio/visualisation/19504587/thumbnail" width="100%" alt="chart visualization" /></noscript>
-            </div>
-            <!-- End Flourish Embed Code for Graph 2 -->
+        <!-- Graph 2: Annual Emissions -->
+        <h3>2. Who Emits the Most CO₂ Today?</h3>
+        <p>In terms of current annual emissions, China is the clear leader, responsible for 28% of global CO₂ emissions as of 2020. North America contributes 18%, with most of that coming from the United States.</p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/19504587">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19504587/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
 
-        </article>
+        <!-- Graph 3: Per Capita Emissions -->
+        <h3>3. Who Has the Highest Emissions Per Person?</h3>
+        <p>When we shift the focus to per capita emissions, the story changes. Small, oil-rich nations like Qatar and Kuwait top the list, with Qatar emitting over 40 tonnes of CO₂ per person each year.</p>
+        <div class="flourish-embed flourish-hierarchy" data-src="visualisation/19504822">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19504822/thumbnail" width="100%" alt="hierarchy visualization" /></noscript>
+        </div>
+
+        <!-- Graph 4: CO₂ Emissions by Income Group -->
+        <h3>4. CO₂ Emissions by Income Group</h3>
+        <p>The disparity in CO₂ emissions between income groups is striking. High-income countries emit significantly more CO₂ per person—up to 30 times more than low-income countries.</p>
+        <div class="flourish-embed flourish-chart" data-src="visualisation/19505466">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19505466/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+
+        <!-- Additional Graphs for CO₂ Emissions -->
+        <div class="flourish-embed flourish-chart" data-src="visualisation/19505560">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19505560/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/19505570">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19505570/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+
+        <div class="flourish-embed flourish-chart" data-src="visualisation/19505582">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19505582/thumbnail" width="100%" alt="chart visualization" /></noscript>
+        </div>
+
+        <!-- Graph 5: CO₂ Emissions and Economic Growth -->
+        <h3>5. CO₂ Emissions and Economic Growth</h3>
+        <p>One of the most significant drivers of CO₂ emissions is economic growth. As countries develop, their GDP per capita increases, often leading to a corresponding rise in CO₂ emissions.</p>
+        <div class="flourish-embed flourish-scatter" data-src="visualisation/19506429">
+            <script src="https://public.flourish.studio/resources/embed.js"></script>
+            <noscript><img src="https://public.flourish.studio/visualisation/19506429/thumbnail" width="100%" alt="scatter visualization" /></noscript>
+        </div>
+
     </main>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 CO₂ Emissions Visualization. All rights reserved.</p>
     </footer>
 
 </body>
